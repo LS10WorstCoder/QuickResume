@@ -1,23 +1,22 @@
 {
   "manifest_version": 3,
   "name": "QuickResume",
+  "description": "A custom resume builder",
   "version": "1.0",
-  "description": "Scrapes screen content and alters a resume PDF in AWS S3 using ChatGPT API",
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "/popup/popup.html",
+    "default_icon": "/images/qr_ICON.png"
   },
-  "permissions": [
-    "activeTab",
-    "scripting",
-    "storage"
-  ],
-  "background": {
-    "service_worker": "background.js"
+  "icons": {
+
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["contentScript.js"]
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.ch ome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
     }
   ]
 }
