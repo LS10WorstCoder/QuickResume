@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickResume</title>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="popup.css">
 </head>
 <body>
+    <!-- Navbar at the top -->
     <div class="container">
-        <a href="popup.html">
+        <a href="../popup/popup.html">
             <div class="logo">
                 <img src="/images/qr_ICON.png" alt="QuickResume Logo">
                 <h1>QuickResume</h1>
             </div>
         </a>
-        <a>
         <div class="action-buttons">
-            <a href="../profile/profile.html">
+            <a href="profile.html">
                 <div class="profile-placeholder">
-                    <img src="/images/betterProfileIcon.svg" alt="Profile Icon" class="icon" onclick="window.location.href='profile.html';">
+                    <img src="/images/betterProfileIcon.svg" alt="Profile Icon" class="icon">
                 </div>
             </a>
             <a href="../settings/setting.html">
@@ -28,16 +28,14 @@
                 </div>
             </a>
         </div>
-        
-        <div class="upload-btn-wrapper">
-            <button class="upload-btn" id="uploadButton">Upload Resume (PDF)</button>
-            <input type="file" accept=".pdf" id="fileInput" style="display:none"/>
-        </div>
-        <!-- Placeholder for showing the uploaded file name -->
-        <div id="fileName" style="display:none;"></div>
 
-        <button class="generate-btn">Generate Cover Letter</button>
+        <!-- Profile Content -->
+        <div class="profile-info">
+            <h2>Profile Information</h2>
+            <p><strong>Google Account:</strong> john.doe@example.com</p>
+            <!-- Conditionally show if a resume is uploaded -->
+            <p><strong>Resume:</strong> <a href="/path/to/resume.pdf" download>Download Resume</a></p>
+        </div>
     </div>
-    <script src="popup.js"></script>
 </body>
 </html>

@@ -1,0 +1,114 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  margin-top: 100px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #6A0DAD;
+    margin: 0;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.profile-placeholder,
+.settings-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+
+.upload-btn {
+  background-color: #6A0DAD;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.upload-btn-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(156, 39, 176, 0.5);
+}
+
+input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.generate-btn {
+    background-color: #9C27B0;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.generate-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(156, 39, 176, 0.5);
+}

@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    position: relative;
+}
+
+/* Logo and Navbar */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #6A0DAD;
+    margin: 0;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.profile-placeholder,
+.settings-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Profile Info Styling */
+.profile-info {
+    text-align: left;
+    margin-top: 60px;  /* Reduced margin */
+}
+
+.profile-info h2 {
+    font-size: 20px;
+    color: #6A0DAD;
+    margin-bottom: 15px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.profile-info a {
+    color: #9C27B0;
+    text-decoration: none;
+    font-weight: 500;
+}
