@@ -6,6 +6,7 @@
     <title>User Profile</title>
     <link rel="stylesheet" href="profile.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
     <!-- Navbar at the top -->
@@ -35,6 +36,15 @@
             <p><strong>Google Account:</strong> john.doe@example.com</p>
             <!-- Conditionally show if a resume is uploaded -->
             <p><strong>Resume:</strong> <a href="/path/to/resume.pdf" download>Download Resume</a></p>
+
+            
+
+            <script>
+                function handleCredentialResponse(response) {
+                    console.log("Encoded JWT ID token: " + response.credential);
+                    // Handle the response (e.g., send it to your server)
+                }
+            </script>
         </div>
     </div>
 </body>
